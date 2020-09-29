@@ -34,7 +34,7 @@ export const MenuBarProps = {
 
 export const FooterProps = {
     imageSrc: {
-        mobile: "home/Desktop.png",
+        mobile: "home/Mobile.png",
         tablet: "https://www.w3schools.com/w3css/img_mountains.jpg",
         desktop: "home/footer_test.png",
     },

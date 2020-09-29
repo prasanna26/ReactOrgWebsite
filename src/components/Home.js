@@ -227,7 +227,7 @@ export default function Home() {
             <Box
                 width="100%"
                 height="100%"
-                style={{ backgroundColor: theme.palette.common.lightGrey }}
+                // style={{ backgroundColor: theme.palette.common.lightGrey }}
             >
                 <Grid container className={classes.teamContainer} justify="center" spacing={2}>
                     {/* <Grid item xs={12} style={{ textAlign: "center" }}>
