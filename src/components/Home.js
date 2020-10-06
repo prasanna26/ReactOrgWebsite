@@ -19,17 +19,18 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         
         justifyContent: "center",
-        color:"white",
+        color:"#FFF",
         fontWeight:900,
         [theme.breakpoints.down("xs")]: {
             height: theme.spacing(15),
         },
+        fontSize:42,
         fontFamily: "Montserrat",
 
     },
     homeImageContainer: {
         backgroundImage: (props) => "url(" + props.description.descriptionImage.src + ")",
-        // opacity:0.55,
+        // opacity:0.67,
         backgroundSize: "100% 100%",
         width: "100%",
         height: "100%",
@@ -72,22 +73,27 @@ const useStyles = makeStyles((theme) => ({
 
     },
     descriptionContainer: {
-        paddingTop : 12,
+        paddingTop : 42,
         justifyContent: "center",
         alignItems: "center",
         display: "flex",
+        opacity:1,
 
     },
     signUpButton: {
         // display: "flex",
         flexWrap:"wrap",
         color:"white",
+        fontWeight:"bold",
+        borderColor:"white",
 
     },
 
     title: {
         fontWeight: 800,
         opacity:1,
+        color:"white",
+        
     },
     titleDescriptionContainer: {
         maxHeight: theme.spacing(50),
@@ -121,14 +127,14 @@ const useStyles = makeStyles((theme) => ({
         height: "100%",
     },
     secondLayer:{
-        backgroundColor: "pink",
+        // backgroundColor: "pink",
         // opacity:0.91,
         // width: "100%",
         height: theme.spacing(12),
         // alignItems: "center",
         display: "center",
         // alignContent: "center",
-        color:"white",
+        // color:"white",
         justifyContent: "center",
         [theme.breakpoints.down("xs")]: {
             height: theme.spacing(15),
@@ -183,6 +189,20 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 700,
         marginBottom: theme.spacing(4),
     },
+    memberSkill: {
+        fontSize: "14px",
+        // fontWeight:200,
+        // color: theme.palette.common.white,
+    },
+    memberName: {
+        fontSize: "14px",
+        // color: theme.palette.common.turquoise,
+        fontWeight: "700",
+    },
+    memberStatus:{
+        fontSize:"12px",
+        color:"red"
+    }
     
     
 })); 
@@ -195,7 +215,7 @@ export default function Home() {
     const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
     let [testimonialIndex, setTestimonialIndex] = React.useState(0);
 
-    const renderMemberBox = (member) => {
+    const renderTrackBox = (member) => {
         
         return (
             <Box textAlign="center" position="relative">
@@ -213,8 +233,8 @@ export default function Home() {
                 
                 <Box className={classes.memberInnerBox}>
                     <Typography className={classes.memberName}>{member.name}</Typography>
-                    <Typography className={classes.memberDesignation}>
-                        {member.department}
+                    <Typography className={classes.memberStatus}>
+                        {member.status}
                     </Typography>
                     <Typography className={classes.memberSkill}>{member.skill}</Typography>
                 </Box>
@@ -222,7 +242,7 @@ export default function Home() {
         );
     };
 
-    const renderMembersContainer = () => {
+    const renderTracksContainer = () => {
         return (
             <Box
                 width="100%"
@@ -238,7 +258,7 @@ export default function Home() {
                     {props.team.members.map((member, index) => {
                         return (
                             <Grid item xs={6} sm={3} key={index}>
-                                {renderMemberBox(member)}
+                                {renderTrackBox(member)}
                             </Grid>
                         );
                     })}
@@ -276,7 +296,7 @@ export default function Home() {
             <Grid>
 
             </Grid>
-            {renderMembersContainer()}
+            {renderTracksContainer()}
             
 
         </Container>

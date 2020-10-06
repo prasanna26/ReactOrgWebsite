@@ -21,44 +21,48 @@ const HomeProps = {
                 // skill: "Enabling holistic learning and development for underprivileged",
                 // department: "",
                 // photo: "home/test.png",
-                name: "",
-                skill: "",
+                name: "EDUCATION",
+                skill: "Enabling holistic learning and development for underprivileged",
                 department: "",
-                photo:"home/test.png",
-                skill:""
+                photo:"home/Mobile-1.png",
+                status:"",
+                
             },
             {
                 // name: "ANIMAL WELFARE",
                 // skill: "Caring for our furry friends and providing the nourishment they deserve",
                 // department: "",
                 // photo: "home/animal_test.png",
-                name: "",
-                skill: "",
+                name: "ANIMAL WELFARE",
+                skill: "Caring for our furry friends and providing the nourishment they deserve",
                 department: "",
-                photo:"home/animal_test.png",
-                skill:""
+                photo:"home/Mobile-2.png",
+                status:"Coming Soon",
+                
             },
             {
                 // name: "PALLIATIVE CARE",
                 // skill: "Bringing a smile to enrich the health and wellbeing of the community",
                 // department: "",
                 // photo: "home/palliative_test.png",
-                name: "",
-                skill: "",
+                name: "PALLIATIVE CARE",
+                skill: "Bringing a smile to enrich the health and wellbeing of the community",
                 department: "",
-                photo:"home/palliative_test.png",
-                skill:""
+                photo:"home/Mobile-3.png",
+                status:"Coming Soon",
+               
             },
             {
                 // name: "TECHNOLOGY",
                 // skill: "Infusing digital solutions to create a social impact",
                 // department: "",
                 // photo: "home/tech_test.png",
-                name: "",
-                skill: "",
+                name: "TECHNOLOGY",
+                skill: "Infusing digital solutions to create a social impact",
                 department: "",
-                photo:"home/tech_test.png",
-                skill:""
+                photo:"home/Mobile-4.png",
+                status:"Coming Soon",
+                
             },
             
         ],
